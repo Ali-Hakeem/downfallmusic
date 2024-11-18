@@ -42,10 +42,10 @@
                                 <div class="col-lg-6 col-md-6 col ">
                                 <div class="card mb-4 rounded-0">
                                     <div class="card-body">
-                                        <h3 class="text-black fw-bold"><a class="text-decoration-none text-black" href="/article/{{$item->slug}}">{{$item->title}}</a></h3>
-                                        <small class="text-muted">By {{$item->author}} | {{date('d/m/Y', strtotime($item->created_at))}}</small><hr>
+                                        <h4 class="text-black fw-bold"><a class="text-decoration-none text-black" href="/article/{{$item->slug}}">{{$item->title}}</a></h4>
+                                        <small class="text-muted"><small>By {{$item->author}} | {{date('d/m/Y', strtotime($item->created_at))}}</small>small></small><hr>
                                     
-                                        <p class="card-text">{!! substr($item->body, 0, 120)!!}...</p>
+                                        <p class="card-text">{!! substr($item->body, 0, 100)!!}...</p>
                                         <a class="text-decoration-none text-black" href="/article/{{$item->slug}}">
                                             <h5 class="float-end text-black fw-bold">Read more</h5>
                                         </a>
@@ -63,10 +63,10 @@
                                     <div class="col-lg-6 col-md-6 col ">
                                     <div class="card mb-4 rounded-0">
                                         <div class="card-body">
-                                            <h3 class="text-black fw-bold"><a class="text-decoration-none text-black" href="/article/{{$item->slug}}">{{$item->title}}</a></h3>
-                                            <span class="medium text-muted">By {{$item->author}} | {{date('d/m/Y', strtotime($item->created_at))}}</span><hr>
+                                            <h4 class="text-black fw-bold"><a class="text-decoration-none text-black" href="/article/{{$item->slug}}">{{$item->title}}</a></h4>
+                                            <small class="medium text-muted"><small>By {{$item->author}} | {{date('d/m/Y', strtotime($item->created_at))}}</small>small></small><hr>
                                        
-                                            <p class="card-text">{!! substr($item->body, 0, 120)!!}...</p>
+                                            <p class="card-text">{!! substr($item->body, 0, 100)!!}...</p>
                                             <a class="text-decoration-none text-black" href="/article/{{$item->slug}}">
                                                 <h5 class="float-end text-black fw-bold">Read more</h5>
                                             </a>
@@ -83,10 +83,10 @@
                                         <div class="col-lg-6 col-md-6 col ">
                                         <div class="card mb-4 rounded-0">
                                             <div class="card-body">
-                                                <h3 class="text-black fw-bold"><a class="text-decoration-none text-black" href="/article/{{$item->slug}}">{{$item->title}}</a></h3>
-                                                <span class="medium text-muted">By {{$item->author}} | {{date('d/m/Y', strtotime($item->created_at))}}</span><hr>
+                                                <h4 class="text-black fw-bold"><a class="text-decoration-none text-black" href="/article/{{$item->slug}}">{{$item->title}}</a></h4>
+                                                <small class="medium text-muted"><small>By {{$item->author}} | {{date('d/m/Y', strtotime($item->created_at))}}</span>small></small><hr>
                                         
-                                                <p class="card-text">{!! substr($item->body, 0, 120)!!}...</p>
+                                                <p class="card-text">{!! substr($item->body, 0, 100)!!}...</p>
                                                 <a class="text-decoration-none text-black" href="/article/{{$item->slug}}">
                                                     <h5 class="float-end text-black fw-bold">Read more</h5>
                                                 </a>
