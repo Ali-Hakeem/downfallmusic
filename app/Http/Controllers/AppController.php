@@ -12,19 +12,19 @@ class AppController extends Controller
     
 	public function index()
     {
-        return view('welcome', [
+         return view('welcome', [
             'list' => Post::orderBy('id', 'desc')->limit(2)->get(),
 			'other' => Post::inRandomOrder()->limit(10)->get(),
             'spotify' => Spotify::all(),
-            'features' => Post::whereHas('categories.posts', function ($q) {
+            'features' => Post::orderBy('id', 'desc')->whereHas('categories.posts', function ($q) {
                 $q->where('category_id', 1);
             })->limit(2)->get(),
-            'interview' => Post::whereHas('categories.posts', function ($q) {
+            'interview' => Post::orderBy('id', 'desc')->whereHas('categories.posts', function ($q) {
                 $q->where('category_id', 5);
-            })->paginate(8),
-            'gigs' => Post::whereHas('categories.posts', function ($q) {
+            })->limit(2)->get(),
+            'gigs' => Post::orderBy('id', 'desc')->whereHas('categories.posts', function ($q) {
                 $q->where('category_id', 7);
-            })->paginate(8)
+            })->limit(2)->get()
 
             
         ]);
