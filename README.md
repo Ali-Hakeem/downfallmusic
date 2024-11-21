@@ -1,4 +1,4 @@
-# simple Blog laravel
+# Simple Blog Laravel
 ------------
 Features
 * simple blogging aplication.
@@ -9,5 +9,5 @@ Features
 
 Demo
 ------------
-Demo is at [Show me demo](https://downfallmusic.vercel.app/)
+Demo is at [Downfallmusic](https://downfallmusic.vercel.app/)
 
