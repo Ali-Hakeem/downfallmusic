@@ -12,10 +12,13 @@ class AppController extends Controller
     
 	public function index()
     {
-         return view('welcome', [
+        return view('welcome', [
             'list' => Post::orderBy('id', 'desc')->limit(2)->get(),
 			'other' => Post::inRandomOrder()->limit(10)->get(),
             'spotify' => Spotify::all(),
+            'band' => Post::orderBy('id', 'desc')->whereHas('categories.posts', function ($q) {
+                $q->where('category_id', 2);
+            })->limit(1)->get(),
             'features' => Post::orderBy('id', 'desc')->whereHas('categories.posts', function ($q) {
                 $q->where('category_id', 1);
             })->limit(2)->get(),
