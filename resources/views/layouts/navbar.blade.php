@@ -1,26 +1,16 @@
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#483d8b">
-    <div class="container">
-        <a class="navbar-brand fw-bold fst-italic" href="/">Downfall Music</a>
-        <a class="navbar-toggler fw-bold text-white text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">☰</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase fw-bold">
-                <li class="nav-item me-3"><a class="nav-link active" href="/">Home</a></li>
-                <li class="nav-item me-3"><a class="nav-link active" href="/features">Features</a></li>
-                <li class="nav-item me-3"><a class="nav-link active" href="/article">Articles</a></li>
-                <li class="nav-item">
-                    <form action="/search" method="GET">
-                            <div class="form-group ms-auto">
-                                <div class="input-group">
-                                    <input type="text" name="search" placeholder="Search .." value="{{ old('search') }}" class="form-control rounded-0"/>
-                                        <!--<button type="submit" class="btn rounded-0" style="background-color:#483d8b">
-                                                        <i class="fas fa-search"></i>
-                                            </button>-->
-                            </div>
-                        </div>
-                    </form>
-                </li>
-            </ul>
-        </div>
+<nav class="text-decoration-none">
+    <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </label>
+        
+    <div class="links-container">
+        <label for="sidebar-active" class="close-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </label>
+        <a class="home-link" href="#">Home</a>
+        <a href="#">Band</a>
+        <a href="#">News</a>
     </div>
 </nav>
 <div class="container py-5 col-xxl-6">
