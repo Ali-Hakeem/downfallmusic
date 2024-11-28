@@ -13,6 +13,16 @@ html{
   font-size: 12pt;
 }
 
+.card-title, .card-body a {
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.card-title, .card-body a:hover {
+  color: #f26549;
+}
+
 nav{
   height: 60px;
   background-color: var(--color-1);
@@ -53,7 +63,7 @@ nav form{
 }
 
 nav a:hover{
-  color: #41baa6;
+  color: #f26549;
 }
 
 nav .home-link{
@@ -76,6 +86,26 @@ nav svg {
 .open-sidebar-button, .close-sidebar-button{
   display: none;
 }
+
+.band .card{
+  background-color: #f26549;
+  text-align: center;
+}
+
+.band h2 {
+  color: #000;
+}
+
+.band a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.band .btn {
+  border-radius: 0px;
+  color: #f26549;
+}
+
 
 @media(max-width: 550px){
   .links-container{
