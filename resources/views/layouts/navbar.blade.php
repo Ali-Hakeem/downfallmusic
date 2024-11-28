@@ -25,7 +25,7 @@
         </form>
     </div>
 </nav>
-<div class="container py-5 col-xxl-6">
+<div class="container py-3 col-xxl-6">
     
     <div class="col-lg-8">
         <h4 class="fw-bold text-white  text-capitalize fst-italic">@yield('page_header', 'Downfall Music')</h4>
