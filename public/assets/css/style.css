@@ -13,16 +13,6 @@ html{
   font-size: 12pt;
 }
 
-.card-title, .card-body a {
-  text-decoration: none;
-  color: #000;
-  margin-bottom: 5px;
-}
-
-.card-title, .card-body a:hover {
-  color: #f26549;
-}
-
 nav{
   height: 60px;
   background-color: var(--color-1);
@@ -76,7 +66,8 @@ nav svg {
 
 .nav-logo {
   height: auto;
-  width: 40px;
+  width: 30px;
+  margin-top: -5px;
 }
 
 #sidebar-active {
@@ -86,6 +77,33 @@ nav svg {
 .open-sidebar-button, .close-sidebar-button{
   display: none;
 }
+
+.c-item {
+  height: 200px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.carousel .carousel-indicators button {
+  width: 5px;
+ height: 5px;
+ border-radius: 100%;
+}
+
+.card-title, .card-body a {
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.card-title, .card-body a:hover {
+  color: #f26549;
+}
+
 
 .band .card{
   background-color: #f26549;
