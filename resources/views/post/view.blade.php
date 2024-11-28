@@ -23,7 +23,7 @@
             </div>
             <div class="card-body">
                 <hr>
-                <p class="card-text">{!!$post->body!!}...</p>
+                <p class="card-text">{!!$post->body!!}</p>
             </div>
         </div>
     </div>
