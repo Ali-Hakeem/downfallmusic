@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="shortcut icon" href="https://t3.ftcdn.net/jpg/05/04/21/70/360_F_504217031_1r23C7Dwe8ejO5O2Cjj9ppeO1c6ZYyrL.jpg">
+        <link rel="icon" type="image/x-icon" href="{{url('/')}}/assets/icons/logo.ico">
 
         <title>@yield('page_title', 'Downfall Music')</title>
 
