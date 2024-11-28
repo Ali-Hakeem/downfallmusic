@@ -3,7 +3,7 @@
     {{ "Downfall Music" }}
 @endsection
 @section('page_header')
-    {{ "Most Recent" }}
+    {{ "Article" }}
 @endsection
 @section('content')
     <!-- Blog entries-->
